@@ -1,0 +1,13 @@
+@mixin all-hover {
+  &:hover {
+    @content;
+  }
+
+  &:focus {
+    @content;
+  }
+
+  &:active {
+    @content;
+  }
+}

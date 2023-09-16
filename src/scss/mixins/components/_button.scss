@@ -1,0 +1,66 @@
+$button-background-color: $color-primary;
+$button-color: $color-white;
+$button-hover-color: darken($color-primary, 10%);
+$button-outline-background-color: transparent;
+$button-outline-border-color: $color-primary;
+$button-outline-color: $color-primary;
+$button-outline-hover-background-color: $color-primary;
+$button-outline-hover-border-color: transparent;
+$button-outline-hover-color: $color-white;
+$button-link-background-color: transparent;
+$button-link-color: $color-primary;
+$button-link-hover-background-color: transparent;
+$button-link-hover-color: rgba($color-primary, .5);
+
+@mixin button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: rem(16) rem(28);
+  border-radius: 6px;
+  outline: none;
+  background-color: $button-background-color;
+  font-size: rem(14);
+  font-weight: $bold;
+  color: $button-color;
+  border: 2px solid transparent;
+  transition: background-color $transition, transform $transition, border-color $transition, color $transition;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:active {
+    transform: scale(.96);
+  }
+
+  &--outline {
+    background-color: $button-outline-background-color;
+    border-color: $button-outline-border-color;
+    color: $button-outline-color;
+
+    &:hover {
+      background-color: $button-outline-hover-background-color;
+      border-color: $button-outline-hover-border-color;
+      color: $button-outline-hover-color;
+    }
+  }
+
+  &--disabled {
+    user-select: none;
+    pointer-events: none; 
+    opacity: .7;
+  }
+
+  &--link {
+    background-color: $button-link-background-color;
+    color: $button-link-color;
+
+    &:hover {
+      background-color: $button-link-hover-background-color;
+      color: $button-link-hover-color;
+    }
+  }
+}

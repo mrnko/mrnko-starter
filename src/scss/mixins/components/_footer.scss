@@ -1,0 +1,27 @@
+@mixin footer {
+  padding-bottom: rem(50);
+  cursor: default;
+
+  &__container {
+    text-align: center;
+    font-size: rem(14);
+
+    @include respond-to('sm') {
+      font-size: rem(12);
+    }
+  }
+
+  &__link {
+    color: $color-primary;
+    transition: opacity $transition;
+
+    &:hover {
+      opacity: .7;
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    display: block;
+  }
+}

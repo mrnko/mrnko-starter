@@ -1,0 +1,53 @@
+$cursor-size: rem(12);
+$cursor-background-color: rgba(255, 215, 0, .5);
+$cursor-aura-background-color: rgba(255, 215, 0, .4);
+
+@mixin cursor {
+  position: absolute;
+  border-radius: 50%;
+  transition: transform .5s cubic-bezier(.75, -1.27, .3, 2.33), opacity .2s cubic-bezier(.75, -1.27, .3, 2.33), background-color .1s ease-in-out;
+  user-select: none;
+  pointer-events: none;
+  z-index: z-index('cursor');
+  display: none;
+  @include size($cursor-size, $cursor-size);
+  background-color: $cursor-background-color;
+  transform: scale(1);
+
+  &.cursor--active {
+    opacity: 0;
+    transform: scale(.2);
+  }
+
+  &.cursor--hidden {
+    transform: scale(.001);
+  }
+
+  @include respond-to('lg') {
+    display: none;
+  }
+}
+
+@mixin cursor-aura {
+  position: absolute;
+  border-radius: 50%;
+  transition: transform .5s cubic-bezier(.75, -1.27, .3, 2.33), opacity .2s cubic-bezier(.75, -1.27, .3, 2.33), background-color .1s ease-in-out;
+  user-select: none;
+  pointer-events: none;
+  z-index: z-index('cursor');
+  @include size(calc($cursor-size + rem(8)), calc($cursor-size + rem(8)));
+  background-color: $cursor-aura-background-color;
+  transform: translate(rem(3), rem(3));
+
+  &.cursor--active {
+    transform: scale(2) translate(rem(2), rem(2));
+  }
+
+  &.cursor--hidden {
+    transform: scale(.001);
+  }
+
+  @include respond-to('lg') {
+    display: none;
+  }
+}

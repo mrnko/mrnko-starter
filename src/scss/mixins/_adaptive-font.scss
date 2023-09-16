@@ -1,0 +1,11 @@
+@mixin adaptive-font($desktop-size, $mobile-size) {
+  $add-size: $desktop-size - $mobile-size;
+  $add-mobile-size: $add-size + $add-size * 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobile-size + px} + #{$add-mobile-size} * ((100vw - 320px) / #{$site-container-width}));
+  }
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobile-size + px} + #{$add-size} * (100vw / #{$site-container-width}));
+  }
+}

@@ -1,0 +1,36 @@
+.navigation {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 0 rem(40);
+  }
+
+  &__item-link {
+    position: relative;
+    padding-bottom: rem(6);
+    display: block;
+    color: $color-text;
+    transition: color $transition;
+
+    &:before {
+      @include pseudo-element('', block, absolute);
+      bottom: 0;
+      left: 0;
+      @include size(0, 2px);
+      background-color: $color-primary;
+      transition: width $transition;
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  @include respond-to('lg') {
+    display: none;
+  }
+}

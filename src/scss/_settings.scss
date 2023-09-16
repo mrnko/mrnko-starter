@@ -1,0 +1,72 @@
+::placeholder {
+  color: $color-text;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: $font-main, $font-default;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color-text;
+  background-color: $color-background;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.for-mobile {
+  display: none;
+
+  @include respond-to('sm') {
+    display: block;
+  }
+}
+
+.container {
+  max-width: $container-max-width;
+  padding: 0 $container-horizontal-padding;
+  margin: 0 auto;
+}
+
+#fp-nav {
+  z-index: 1 !important;
+}
+
+.flow-effect {
+  @include flow-effect;
+}
+
+.blink-effect {
+  @include blink-effect;
+}
+
+.cursor {
+  @include cursor;
+}
+
+.cursor-aura {
+  @include cursor-aura;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}

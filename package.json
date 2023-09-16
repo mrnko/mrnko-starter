@@ -1,0 +1,27 @@
+{
+  "name": "mrnko-starter",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1",
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "fullpage.js": "^4.0.20",
+    "gsap": "^3.12.2",
+    "inputmask": "^5.0.8",
+    "micromodal": "^0.4.10",
+    "normalize.css": "^8.0.1",
+    "scrollreveal": "^4.0.9",
+    "swiper": "^10.2.0",
+    "tippy.js": "^6.2.5"
+  }
+}

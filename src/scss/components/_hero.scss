@@ -1,0 +1,130 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  cursor: default;
+  
+  &__title {
+    font-size: rem(75);
+    font-weight: $black;
+    letter-spacing: rem(-1);
+
+    @include respond-to('md') {
+      font-size: rem(50);
+    }
+
+    @include respond-to('sm') {
+      font-size: rem(45);
+    }
+
+    @include respond-to('xs') {
+      font-size: rem(40);
+    }
+  }
+
+  &__subtitle {
+    margin: rem(-20) 0 rem(12) 0;
+    font-size: rem(28);
+    font-weight: var(--regular);
+    letter-spacing: rem(2);
+
+    @include respond-to('md') {
+      font-size: rem(18);
+    }
+
+    @include respond-to('sm') {
+      margin: rem(-6) 0 rem(5) 0;
+      font-size: rem(18);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    transition: color $transition;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__info {
+    font-size: rem(14);
+    font-weight: $light;
+    letter-spacing: rem(1);
+
+    @include respond-to('md') {
+      font-size: rem(10);
+    }
+  }
+
+  &__info-link {
+    @include all-hover {
+      color: $color-primary;
+    }
+  }
+
+  &__social-list {
+    margin-top: rem(25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 rem(15);
+  }
+
+  &__social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(rem(38), rem(38));
+    border-radius: 50%;
+    font-size: rem(14);
+    color: $color-white;
+    transition: background-color $transition;
+
+    @include all-hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &__social-list-item--website {
+    background-color: #2196F3;
+  }
+
+  &__social-list-item--twitter {
+    background-color: #00acee;
+  }
+
+  &__social-list-item--facebook {
+    background-color: #4267B2;
+  }
+
+  &__social-list-item--instagram {
+    background-color: #fbad50;
+  }
+
+  &__stop-war-in-ukraine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity $transition;
+
+    &:hover {
+      opacity: .8;
+  }
+  }
+
+  &__stand-with-ukraine {
+    margin-top: rem(50);
+    width: rem(100);
+    transition: opacity $transition;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
