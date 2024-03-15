@@ -3,21 +3,21 @@
     <h3 class="demo__title">Forms</h3>
     <form class="demo__form form" method="post">
       <div class="form__row form__row--4">
-        <div class="form__column">
+        <div class="form__column is-desktop">
           <input class="form__input make-cursor-active" id="form-first-name" type="text" required>
-          <label class="form__label-above" form="form-first-name">First Name</label>
+          <label class="form__label-above" for="form-first-name">First Name</label>
         </div>
         <div class="form__column">
           <input class="form__input make-cursor-active" id="form-last-name" type="text" required>
-          <label class="form__label-above" form="form-last-name">Last Name</label>
+          <label class="form__label-above" for="form-last-name">Last Name</label>
         </div>
         <div class="form__column">
           <input class="form__input make-cursor-active input-mask-tel" id="form-tel" type="tel"
-            placeholder="Phone number" required>
+            placeholder="Phone number" data-code="38" required>
         </div>
         <div class="form__column">
           <input class="form__input make-cursor-active" id="form-email" type="email" required>
-          <label class="form__label-above" form="form-email">E-mail</label>
+          <label class="form__label-above" for="form-email">E-mail</label>
         </div>
       </div>
       <div class="form__row">

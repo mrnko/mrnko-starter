@@ -19,7 +19,7 @@
     @include stroke-hover-effect(rem(2), rem(8) rem(16), $color-primary, .4s);
   }
 
-  @include mq('sm') {
+  @include mq('md') {
     display: none;
   }
 }

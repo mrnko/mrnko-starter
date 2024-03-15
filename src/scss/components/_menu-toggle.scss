@@ -33,7 +33,7 @@
     }
   }
 
-  @include mq('sm') {
+  @include mq('md') {
     display: block;
   }
 }

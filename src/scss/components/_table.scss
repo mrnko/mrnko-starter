@@ -31,6 +31,19 @@
   thead,
   tfoot {
     background-color: rgba($color-black, .03);
+    cursor: default;
+  }
+
+  thead, tfoot {
+    @include hover {
+      background-color: rgba($color-black, .03);
+    }
+  }
+
+  thead tr, tfoot tr {
+    @include hover {
+      background-color: transparent;
+    }
   }
 
   &--center {

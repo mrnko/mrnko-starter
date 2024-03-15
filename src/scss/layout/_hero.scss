@@ -76,7 +76,15 @@
   }
 
   &__social-list-item--instagram {
-    background-color: #fbad50;
+    background-color: #E1306C;
+  }
+
+  &__social-list-item--youtube {
+    background-color: #FF0000;
+  }
+
+  &__social-list-item--github {
+    background-color: #2b3137;
   }
 
   &__stop-war-in-ukraine {
@@ -87,6 +95,10 @@
 
     @include hover {
       opacity: .8;
+    }
+
+    @include mq('md') {
+      opacity: .2;
     }
   }
 

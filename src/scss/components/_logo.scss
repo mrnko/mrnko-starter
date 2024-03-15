@@ -1,6 +1,8 @@
 .logo {
   $element: &;
 
+  margin-top: rem(4);
+
   &__image {
     transition: opacity $transition;
   }

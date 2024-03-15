@@ -16,17 +16,22 @@ import { scrollTo } from './components/scroll-to';
 import { sidemenu } from './components/sidemenu';
 import { makeInputMask } from './components/input-mask';
 import { tooltip } from './components/tooltip';
+import { mouseParallax } from './components/mouseParallax';
+import { cookiesNotice } from './components/cookiesNotice';
 
 preloader();
 customCursor();
 scrollTo();
 makeInputMask();
+flowEffect();
 modal();
 sidemenu();
 tooltip();
 scrollAnimations();
-flowEffect();
 slider();
+mouseParallax();
+cookiesNotice();
+
 window.addEventListener('scroll', () => {
   scrollUp(window.scrollY);
 });

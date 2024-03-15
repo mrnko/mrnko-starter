@@ -9,7 +9,7 @@
   z-index: z-index('sidemenu');
   @include size(100vw, 100vh);
 
-  @media screen and (min-width: rem(575)) {
+  @media screen and (min-width: map-get($grid-breakpoints, 'md')) {
     visibility: hidden;
   }
 

@@ -47,12 +47,4 @@
       color: rgba($color-primary, .5);
     }
   }
-
-  &--blinked {
-    @include blink-effect;
-  }
-
-  &--flowed {
-    @include flow-effect;
-  }
 }

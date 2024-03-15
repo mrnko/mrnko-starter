@@ -1,5 +1,9 @@
 .demo {
-  margin-bottom: rem(200);
+  padding: rem(100) 0;
+
+  &:nth-child(2n) {
+    background-color: darken($color-white, 2%);
+  }
 
   @include mq('sm') {
     margin-bottom: rem(120);
@@ -8,7 +12,8 @@
   &__title {
     font-size: rem(40);
     font-weight: $bold;
-    margin-bottom: rem(100);
+    margin-bottom: rem(80);
+    cursor: default;
 
     @include mq('sm') {
       font-size: rem(30);
@@ -17,20 +22,18 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: rem(50) rem(50);
+    @include grid-list(4, 1fr, rem(80), rem(50));
 
     @include mq('lg') {
-      grid-template-columns: repeat(3, 1fr);
+      @include grid-list(3, 1fr, rem(50), rem(50));
     }
 
     @include mq('md') {
-      grid-template-columns: repeat(2, 1fr);
+      @include grid-list(2, 1fr, rem(50), rem(50));
     }
 
     @include mq('sm') {
-      grid-template-columns: repeat(1, 1fr);
+      @include grid-list(1, 1fr, rem(50), rem(50));
     }
   }
 
