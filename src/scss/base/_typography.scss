@@ -1,0 +1,22 @@
+@include font-face("Inter", "Inter-Light", $light, normal, swap);
+@include font-face("Inter", "Inter-Regular", $regular, normal, swap);
+@include font-face("Inter", "Inter-Medium", $medium, normal, swap);
+@include font-face("Inter", "Inter-Bold", $bold, normal, swap);
+@include font-face("Inter", "Inter-Black", $black, normal, swap);
+@include font-face("Montserrat", "Montserrat-Light", $light, normal, swap);
+@include font-face("Montserrat", "Montserrat-Regular", $regular, normal, swap);
+@include font-face("Montserrat", "Montserrat-Medium", $medium, normal, swap);
+@include font-face("Montserrat", "Montserrat-Bold", $bold, normal, swap);
+
+@for $i from 1 through 6 {
+  h#{7 - $i} {
+    margin: 0;
+    font-size: $i * em(18);
+  }
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color $transition;
+}

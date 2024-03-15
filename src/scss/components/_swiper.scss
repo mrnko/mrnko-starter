@@ -1,3 +1,45 @@
 .swiper {
-  @include swiper;
+  $element: &;
+
+  padding-bottom: rem(50);
+
+  &-slide {
+    @include size(rem(300), rem(300));
+    border-radius: rem(8);
+    border: rem(1) solid rgba($color-black, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-pagination {
+    --swiper-pagination-bullet-horizontal-gap: 5px;
+
+    bottom: rem(10) !important;
+
+    #{$element}-pagination-bullet {
+      width: rem(10) !important;
+      height: rem(10) !important;
+    }
+  }
+
+  #{$element}-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: $color-black;
+
+    &:active {
+      scale: .98;
+    }
+  }
+
+  #{$element}-button-prev {
+    left: 0;
+  }
+
+  #{$element}-button-next {
+    right: 0;
+  }
 }

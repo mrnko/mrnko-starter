@@ -1,0 +1,47 @@
+::placeholder {
+  color: $color-text;
+}
+
+::selection {
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $font-main, $font-default;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color-text;
+  background-color: $color-background;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,25 @@
+.navigation {
+  &__list {
+    display: flex;
+    column-gap: 1vw;
+  }
+
+  &__link {
+    position: relative;
+    padding: rem(10);
+    display: block;
+    font-weight: $medium;
+    color: $color-text;
+    transition: color $transition;
+
+    @include hover {
+      color: $color-primary;
+    }
+
+    @include stroke-hover-effect(rem(2), rem(8) rem(16), $color-primary, .4s);
+  }
+
+  @include mq('sm') {
+    display: none;
+  }
+}

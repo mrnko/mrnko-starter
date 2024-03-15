@@ -1,0 +1,13 @@
+.logo {
+  $element: &;
+
+  &__image {
+    transition: opacity $transition;
+  }
+
+  @include hover {
+    #{$element}__image {
+      opacity: .7;
+    }
+  }
+}

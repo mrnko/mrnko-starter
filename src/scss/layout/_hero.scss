@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  cursor: default;
+
+  &__title {
+    font-size: clamp(rem(40), 4vw, rem(80));
+    font-weight: $black;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: rem(-5) 0 rem(30) 0;
+    font-size: clamp(rem(18), 1vw, rem(28));
+    font-weight: $regular;
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    transition: color $transition;
+
+    @include hover {
+      color: $color-primary;
+    }
+  }
+
+  &__info {
+    font-size: clamp(rem(10), 1vw, rem(14));
+    font-weight: $light;
+  }
+
+  &__info-link {
+    @include hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__social-list {
+    margin-top: rem(25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 rem(15);
+  }
+
+  &__social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(rem(38), rem(38));
+    border-radius: 50%;
+    font-size: rem(14);
+    color: $color-white;
+    transition: background-color $transition;
+
+    @include hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &__social-list-item--website {
+    background-color: #2196F3;
+  }
+
+  &__social-list-item--twitter {
+    background-color: #00acee;
+  }
+
+  &__social-list-item--facebook {
+    background-color: #4267B2;
+  }
+
+  &__social-list-item--instagram {
+    background-color: #fbad50;
+  }
+
+  &__stop-war-in-ukraine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity $transition;
+
+    @include hover {
+      opacity: .8;
+    }
+  }
+
+  &__stand-with-ukraine {
+    margin-top: rem(50);
+    width: rem(100);
+    transition: opacity $transition;
+
+    @include hover {
+      opacity: .8;
+    }
+  }
+}

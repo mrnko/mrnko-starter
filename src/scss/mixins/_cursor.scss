@@ -1,0 +1,39 @@
+@mixin cursor($type: 'cursor') {
+  $element: &;
+
+  position: absolute;
+  border-radius: 50%;
+  transition: transform .5s cubic-bezier(.75, -1.27, .3, 2.33), opacity .2s cubic-bezier(.75, -1.27, .3, 2.33), background-color .1s ease-in-out;
+  user-select: none;
+  pointer-events: none;
+  z-index: z-index('cursor');
+
+  @if type == 'cursor' {
+    @include size(rem(12), rem(12));
+    background-color: rgba(255, 215, 0, .5);
+    transform: scale(1);
+
+    &.#{$element}--active {
+      opacity: 0;
+      transform: scale(.2);
+    }
+  }
+
+  @else if type == 'aura' {
+    @include size(calc(rem(12) + rem(8)), calc(rem(12) + rem(8)));
+    background-color: rgba(255, 215, 0, .4);
+    transform: translate(rem(3), rem(3));
+
+    &.#{$element}--active {
+      transform: scale(2) translate(rem(2), rem(2));
+    }
+  }
+
+  &.#{$element}--hidden {
+    transform: scale(.001);
+  }
+
+  @include mq('lg') {
+    display: none;
+  }
+}

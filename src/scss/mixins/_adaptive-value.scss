@@ -5,17 +5,19 @@
     #{$property}: $start-size + px;
 
     @media (max-width: #{$container-max-width + px}) {
-      #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - 320px) / #{$container-max-width - 320}));
+      #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - rem(320)) / #{$container-max-width - 320}));
     }
   }
+
   @else if type == 2 {
     #{$property}: $start-size + px;
 
     @media (min-width: #{$container-max-width + px}) {
-      #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - 320px) / #{$site-max-width - 320}));
+      #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - rem(320)) / #{$site-max-width - 320}));
     }
   }
+
   @else {
-    #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - 320px) / #{$site-max-width - 320}));
+    #{$property}: calc(#{$min-size + px} + #{$add-size} * ((100vw - rem(320)) / #{$site-max-width - 320}));
   }
 }

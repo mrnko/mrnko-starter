@@ -1,23 +1,37 @@
 <header class="header">
   <div class="header__container container">
+    <div class="header__logo logo">
+      <a class="logo__link" href="/">
+        <img class="logo__image" src="public/images/logo.svg" alt="Mrnko Starter">
+      </a>
+    </div>
+
     <div class="header__navigation navigation">
       <ul class="navigation__list">
-        <li class="navigation__list-item">
-          <a class="navigation__item-link" href="#buttons">Buttons</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#buttons">Buttons</a>
         </li>
-        <li class="navigation__list-item">
-          <a class="navigation__item-link" href="#forms">Forms</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#forms">Forms</a>
         </li>
-        <li class="navigation__list-item">
-          <a class="navigation__item-link" href="#table">Table</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#table">Table</a>
         </li>
-        <li class="navigation__list-item">
-          <a class="navigation__item-link" href="#slider">Slider</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#slider">Slider</a>
         </li>
-        <li class="navigation__list-item">
-          <a class="navigation__item-link" href="#modal">Modal</a>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#modal">Modal</a>
         </li>
       </ul>
     </div>
+
+    <button class="header__menu-toggle menu-toggle" id="menu-toggle">
+      <svg class="menu-toggle__inner" viewBox="0 0 12 10">
+        <path class="menu-toggle__line menu-toggle__line--01" d="M10,2 L2,2"></path>
+        <path class="menu-toggle__line menu-toggle__line--02" d="M2,5 L10,5"></path>
+        <path class="menu-toggle__line menu-toggle__line--03" d="M10,8 L2,8"></path>
+      </svg>
+    </button>
   </div>
 </header>

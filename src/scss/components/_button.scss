@@ -1,3 +1,58 @@
 .button {
-  @include button;
+  position: relative;
+  @include flex-inline-center;
+  padding: rem(16) rem(28);
+  border-radius: rem(6);
+  outline: none;
+  background-color: $color-primary;
+  font-size: rem(14);
+  font-weight: $bold;
+  color: $color-white;
+  border: rem(2) solid transparent;
+  cursor: pointer;
+  transition: background-color $transition, transform $transition, border-color $transition, color $transition;
+
+  @include hover {
+    background-color: darken($color-primary, 10%);
+  }
+
+  &:active {
+    transform: scale(.96);
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: $color-primary;
+    color: $color-primary;
+
+    @include hover {
+      background-color: $color-primary;
+      border-color: transparent;
+      color: $color-white;
+    }
+  }
+
+  &--disabled {
+    user-select: none;
+    pointer-events: none;
+    opacity: .7;
+  }
+
+  &--link {
+    background-color: transparent;
+    color: $color-primary;
+
+    @include hover {
+      background-color: transparent;
+      color: rgba($color-primary, .5);
+    }
+  }
+
+  &--blinked {
+    @include blink-effect;
+  }
+
+  &--flowed {
+    @include flow-effect;
+  }
 }

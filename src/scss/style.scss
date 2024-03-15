@@ -1,11 +1,15 @@
 @use 'sass:math';
 
-@import 'functions';
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
-@import 'settings';
-@import 'vendor';
+@import 'base/reset';
 
-@import 'partials';
-@import 'components';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'abstracts/components';
+@import 'abstracts/layout';
+@import 'abstracts/pages';
+@import 'abstracts/vendors';
+
+@import 'base/settings';
+@import 'base/typography';

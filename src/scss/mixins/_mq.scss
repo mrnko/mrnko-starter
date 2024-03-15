@@ -1,0 +1,7 @@
+@mixin mq($grid-breakpoint) {
+  @if map-has-key($grid-breakpoints, $grid-breakpoint) {
+    @media only screen and (max-width: map-get($grid-breakpoints, $grid-breakpoint)) {
+      @content;
+    }
+  }
+}

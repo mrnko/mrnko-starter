@@ -1,0 +1,40 @@
+@mixin flow-effect {
+  background-color: transparent !important;
+  border: rem(2) solid $color-primary !important;
+  color: $color-primary !important;
+  overflow: hidden;
+  transition: color .4s;
+
+  span {
+    position: relative;
+    z-index: 3;
+  }
+
+  &:before {
+    @include pseudo-element('', block, absolute);
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    @include size(0, 0);
+    background-color: $color-primary;
+    border-radius: 50%;
+    transition: width .6s, height .6s;
+
+    @include mq('sm') {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: $color-white !important;
+
+    @include mq('sm') {
+      color: $color-primary !important;
+    }
+
+    &:before {
+      @include size(rem(570), rem(570));
+      transition: width .75s, height .75s;
+    }
+  }
+}

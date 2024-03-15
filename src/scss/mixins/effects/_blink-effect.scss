@@ -1,0 +1,48 @@
+$blink-effect-speed: 3s;
+
+@mixin blink-effect {
+  overflow: hidden;
+
+  &:after {
+    @include pseudo-element('', block, absolute);
+    top: 0;
+    left: -20%;
+    @include size(rem(14), 120%);
+    background-color: $color-white;
+    opacity: .35;
+    transform: rotate(5deg);
+    animation: button-blink $blink-effect-speed ease infinite;
+  }
+
+  &:hover {
+    &:after {
+      animation: none;
+    }
+  }
+
+  @keyframes button-blink {
+    0% {
+      left: -20%;
+      opacity: .35;
+      visibility: visible;
+    }
+
+    70% {
+      left: 120%;
+    }
+
+    70.01% {
+      left: -20%;
+    }
+
+    99% {
+      left: -20%;
+      opacity: .35;
+    }
+
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}

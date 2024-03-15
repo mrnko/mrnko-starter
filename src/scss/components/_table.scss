@@ -1,3 +1,43 @@
 .table {
-  @include table;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+  }
+
+  td {
+    padding: rem(14) rem(22);
+    border: 1px solid rgba($color-black, .03);
+  }
+
+  tr {
+    border-radius: rem(10);
+    transition: background-color $transition;
+
+    &:nth-child(even) {
+      background-color: rgba($color-black, .03);
+    }
+
+    @include hover {
+      background-color: rgba($color-black, .05);
+    }
+  }
+
+  td {
+    margin: 0;
+  }
+
+  thead,
+  tfoot {
+    background-color: rgba($color-black, .03);
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--bold {
+    font-weight: $bold;
+  }
 }

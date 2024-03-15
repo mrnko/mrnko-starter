@@ -1,0 +1,9 @@
+.container {
+  max-width: $container-max-width;
+  padding: 0 $container-horizontal-padding;
+  margin: 0 auto;
+
+  &--fluid {
+    max-width: 100%;
+  }
+}

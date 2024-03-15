@@ -1,0 +1,51 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include size(100vw, 100vh);
+  z-index: z-index('preloader');
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity $transition;
+
+  &__logo {
+    @include size(rem(300), rem(300));
+    padding-bottom: rem(10);
+    background: url('../../../images/logo.svg') no-repeat center;
+    background-size: 80%;
+
+    @include mq('sm') {
+      @include size(calc(rem(300) - rem(100)), calc(rem(300) - rem(100)));
+    }
+  }
+
+  &__circle {
+    border-top: rem(2) solid $color-text;
+    border-radius: 50%;
+    @include size(calc(rem(300) + rem(10)), calc(rem(300) + rem(10)));
+    animation: preloader-spin 1.4s linear infinite;
+
+    @include mq('sm') {
+      @include size(calc(rem(300) - rem(90)), calc(rem(300) - rem(90)));
+    }
+  }
+
+  &--invisible {
+    opacity: 0;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+}
+
+@keyframes preloader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  z-index: z-index('header');
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--fixed {
+    position: fixed;
+  }
+}
