@@ -1,17 +1,29 @@
-export function preloader() {
-  window.onload = function () {
-    let preloader = document.querySelector('.preloader')
+import vars from '../_vars';
+import { disableScroll, enableScroll } from '../functions/scroll-behavior';
 
+(function () {
+  const preloader = vars.documentEl.getElementById('preloader');
+
+  if (!preloader) {
+    return false;
+  }
+
+  const preloaderInvisibleClass = 'preloader--invisible';
+  const preloaderHiddenClass = 'preloader--hidden';
+  const preloaderInvisibleDelay = 1000;
+  const preloaderHiddenDelay = 500;
+
+  disableScroll();
+
+  vars.windowEl.onload = function () {
     setTimeout(function () {
+      preloader.classList.add(preloaderInvisibleClass);
 
-      preloader.classList.add('preloader--invisible')
-
-      document.querySelector('html').style.overflowY = 'auto'
+      enableScroll();
 
       setTimeout(function () {
-        preloader.classList.add('preloader--hidden')
-      }, 500)
-
-    }, 1000)
+        preloader.classList.add(preloaderHiddenClass);
+      }, preloaderHiddenDelay);
+    }, preloaderInvisibleDelay);
   }
-}
+})();

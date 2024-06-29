@@ -1,5 +1,7 @@
-export function modal() {
-  MicroModal.init({
+import MicroModal from 'micromodal';
+
+(function () {
+  const modal = MicroModal.init({
     openTrigger: 'data-modal-open',
     closeTrigger: 'data-modal-close',
     openClass: 'modal__slide--open',
@@ -8,4 +10,4 @@ export function modal() {
     awaitOpenAnimation: true,
     awaitCloseAnimation: true
   })
-}
+})();

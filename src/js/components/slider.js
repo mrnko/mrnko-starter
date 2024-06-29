@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-export function slider() {
+(function () {
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     initialSlide: 0,
@@ -29,4 +29,4 @@ export function slider() {
       }
     }
   });
-}
+})();

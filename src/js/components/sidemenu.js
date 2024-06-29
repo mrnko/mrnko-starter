@@ -1,6 +1,6 @@
 import { gsap, Power2 } from 'gsap';
 
-export function sidemenu() {
+(function () {
   const menuToggle = document.getElementById('menu-toggle');
   const header = document.querySelector('.header');
   const sidemenu = document.querySelector('.sidemenu');
@@ -74,4 +74,4 @@ export function sidemenu() {
       document.querySelector('html').style.overflowY = 'auto';
     });
   }
-}
+})();

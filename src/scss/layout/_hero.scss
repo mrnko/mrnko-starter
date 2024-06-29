@@ -86,29 +86,4 @@
   &__social-list-item--github {
     background-color: #2b3137;
   }
-
-  &__stop-war-in-ukraine {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity $transition;
-
-    @include hover {
-      opacity: .8;
-    }
-
-    @include mq('md') {
-      opacity: .2;
-    }
-  }
-
-  &__stand-with-ukraine {
-    margin-top: rem(50);
-    width: rem(100);
-    transition: opacity $transition;
-
-    @include hover {
-      opacity: .8;
-    }
-  }
 }

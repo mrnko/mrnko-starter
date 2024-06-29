@@ -1,4 +1,4 @@
-export function scrollTo() {
+(function () {
   const smoothLinks = document.querySelectorAll("a[href^='#']");
 
   for (let smoothLink of smoothLinks) {
@@ -12,4 +12,4 @@ export function scrollTo() {
       });
     });
   };
-}
+})();

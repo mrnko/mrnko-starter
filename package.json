@@ -1,12 +1,14 @@
 {
   "name": "mrnko-starter",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clear": "node .core/scripts/clear.js",
+    "zip": "node .core/scripts/zip.js"
   },
   "devDependencies": {
     "sass": "^1.66.1",
@@ -15,8 +17,11 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
+    "archiver": "^7.0.1",
+    "fs-extra": "^11.2.0",
     "gsap": "^3.12.2",
     "inputmask": "^5.0.8",
+    "inquirer": "^9.3.1",
     "micromodal": "^0.4.10",
     "normalize.css": "^8.0.1",
     "scrollreveal": "^4.0.9",

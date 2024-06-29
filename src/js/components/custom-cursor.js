@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-export function customCursor() {
+(function () {
   document.body.innerHTML += '<div class="cursor"></div>';
   document.body.innerHTML += '<div class="cursor-aura"></div>';
 
@@ -86,4 +86,4 @@ export function customCursor() {
       follower.classList.remove('cursor--active');
     })
   }
-}
+})();

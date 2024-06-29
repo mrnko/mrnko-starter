@@ -1,4 +1,4 @@
-export function mouseParallax() {
+(function () {
   if (window.matchMedia('(min-width: 768px)').matches) {
     document.addEventListener('mousemove', parallax);
   }
@@ -12,4 +12,4 @@ export function mouseParallax() {
       shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
   }
-}
+})();

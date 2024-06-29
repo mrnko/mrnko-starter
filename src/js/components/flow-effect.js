@@ -1,4 +1,4 @@
-export function flowEffect() {
+(function () {
   let flowEffectElements = document.querySelectorAll('.flow-effect');
 
   for (let flowEffectElement of flowEffectElements) {
@@ -10,4 +10,4 @@ export function flowEffect() {
       this.style.setProperty('--y', y + 'px');
     });
   }
-}
+})();

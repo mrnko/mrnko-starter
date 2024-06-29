@@ -1,6 +1,6 @@
 import tippy from 'tippy.js';
 
-export function tooltip() {
+(function () {
   tippy('.tooltip', {
     placement: 'bottom',
     content(reference) {
@@ -9,4 +9,4 @@ export function tooltip() {
       return title;
     }
   });
-}
+})();

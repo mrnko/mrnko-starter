@@ -1,22 +1,38 @@
-﻿# Change Log
+﻿# Changelog
+
+Все значительные изменения в этом проекте документируются в этом файле.
+
+Формат основан на [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+и этот проект придерживается [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.4.0] - 2024-06-29
+ 
+- Добавлена директория ".core" с системными файлами проекта.
+- Добавлена директория ".vscode" с рекомендуемыми настройками редактора.
+- Добавлен скрипт сброса демо данных проекта по команде `npm run clear`.
+- Добавлен скрипт создания архива из файлов проекта по команде `npm run zip`.
+- Добавлена документация к проекту.
+- Изменена структура проекта.
+- Изменена структура JS скриптов и улучшен функционал скриптов.
+- Изменены файлы проекта и добавлены комментарии.
 
 ## [0.3.0] - 2024-03-16
  
-- Added new mixin: grid-list.
-- Added warning about cookies.
-- Added new mouse parallax effect with data-parallax attribute.
-- Added to scss - base/classes.
-- Added date code attribute for phone in the input.
-- Classes added: is-mobile and is-desktop.
-- Bugs fixed.
+- Добавлен новый SCSS миксин: grid-list.
+- Добавлен компонент предупреждения о файлах cookies.
+- Добавлен новый эффект параллакса мыши с атрибутом data-parallax.
+- Добавлен файл в SCSS - base/classes.
+- Добавлен атрибут кода даты для телефона при вводе.
+- Добавлены классы: is-mobile и is-desktop для опеределния устройства.
+- Исправлены некоторые ошибки.
 
 ## [0.2.0] - 2024-03-15
- 
-- Project structure changed.
-- Styles are now divided into groups: components, layout, pages.
-- Changed sidemenu on mobile devices.
-- Bugs fixed.
+
+- Добавлено разделение стилей SCSS на группы: компоненты, макеты, страницы.
+- Изменена структура проекта.
+- Изменено сайдменю на мобильных устройствах.
+- Исправлены некоторые ошибки.
  
 ## [0.1.0] - 2023-09-16
  
-- First release version.
+- Первая версия сборщика сайтов MRNKO STARTER v0.1.0.

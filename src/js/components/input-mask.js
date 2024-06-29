@@ -1,11 +1,15 @@
-export function makeInputMask() {
-  let inputMaskTelElements = document.querySelectorAll('.input-mask-tel');
+import Inputmask from 'inputmask';
 
-  for (let inputMaskTelElement of inputMaskTelElements) {
-    const code = inputMaskTelElement.dataset.code;
+(function () {
+  const inputMaskTelElements = document.querySelectorAll('.input-mask-tel');
 
-    Inputmask({
-      'mask': '+' + code + ' (999) 999-99-99'
-    }).mask(inputMaskTelElement)
+  if (inputMaskTelElements) {
+    for (let inputMaskTelElement of inputMaskTelElements) {
+      const code = inputMaskTelElement.dataset.code;
+
+      Inputmask({
+        'mask': '+' + code + ' (999) 999-99-99'
+      }).mask(inputMaskTelElement)
+    }
   }
-}
+})();

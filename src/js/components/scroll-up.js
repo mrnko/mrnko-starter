@@ -1,4 +1,4 @@
-export function scrollUp() {
+(function () {
   let scrollUpButton = document.querySelector('.scroll-up')
   let scrollUpToElement = document.querySelector('.hero')
 
@@ -14,4 +14,4 @@ export function scrollUp() {
       block: 'center'
     })
   })
-}
+})();

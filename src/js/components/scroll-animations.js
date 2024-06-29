@@ -1,6 +1,6 @@
 import ScrollReveal from 'scrollreveal';
 
-export function scrollAnimations() {
+(function () {
   function makeScrollAnimations() {
     const sr = ScrollReveal({
       reset: false,
@@ -22,4 +22,4 @@ export function scrollAnimations() {
   setTimeout(() => {
     makeScrollAnimations();
   }, 1000);
-}
+})();
