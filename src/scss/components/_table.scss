@@ -1,4 +1,6 @@
 .table {
+  $element: &;
+  
   overflow-x: auto;
 
   table {

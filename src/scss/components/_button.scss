@@ -1,4 +1,6 @@
 .button {
+  $element: &;
+  
   position: relative;
   @include flex-inline-center;
   padding: rem(16) rem(28);
@@ -10,7 +12,9 @@
   color: $color-white;
   border: rem(2) solid transparent;
   cursor: pointer;
-  transition: background-color $transition, transform $transition, border-color $transition, color $transition;
+  transition: background-color $transition,
+    transform $transition,
+    border-color $transition, color $transition;
 
   @include hover {
     background-color: darken($color-primary, 10%);

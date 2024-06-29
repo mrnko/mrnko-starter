@@ -44,7 +44,8 @@
     font-size: rem(14);
     outline: none;
     box-shadow: 0 0 rem(2) rgba($color-black, .24);
-    transition: border-color $transition, box-shadow $transition;
+    transition: border-color $transition,
+      box-shadow $transition;
 
     &::placeholder {
       color: rgba($color-black, .6);
@@ -55,7 +56,8 @@
       box-shadow: 0 0 rem(2) rgba($color-primary, .24);
     }
 
-    &:focus + #{$element}__label-above, &:valid + #{$element}__label-above {
+    &:focus+#{$element}__label-above,
+    &:valid+#{$element}__label-above {
       font-size: rem(13);
       left: 0;
       top: rem(-25);

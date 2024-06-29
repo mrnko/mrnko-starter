@@ -1,6 +1,8 @@
 .container {
-  max-width: $container-max-width;
-  padding: 0 $container-horizontal-padding;
+  $element: &;
+  
+  max-width: rem(calc($container-max-width + (($container-horizontal-padding * 2) * 2)));
+  padding: 0 rem($container-horizontal-padding);
   margin: 0 auto;
 
   &--fluid {

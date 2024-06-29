@@ -1,3 +1,10 @@
+// ----------------------------------------------------------------------------------------------
+//
+// Пользовательские классы
+//
+// Все вспомогающие классы подключайте здесь
+//
+// ----------------------------------------------------------------------------------------------
 .blink-effect {
   @include blink-effect;
 }
@@ -6,13 +13,25 @@
   @include flow-effect;
 }
 
-.is-desktop {
+.desktop-only {
+  @include mq('lg') {
+    display: none;
+  }
+}
+
+.tablet-only {
+  display: none;
+
+  @include mq('lg') {
+    display: block;
+  }
+
   @include mq('md') {
     display: none;
   }
 }
 
-.is-mobile {
+.mobile-only {
   display: none;
 
   @include mq('md') {

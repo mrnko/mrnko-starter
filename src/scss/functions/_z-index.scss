@@ -1,10 +1,16 @@
+// ----------------------------------------------------------------------------------------------
+//
+// Функция возвращает значение `z-index` из таблицы `z-indexes`
+//
+// ----------------------------------------------------------------------------------------------
+
 @function z-index($name, $z-indexes-list: $z-indexes) {
   @if index($z-indexes-list, $name) {
     @return (length($z-indexes-list) - index($z-indexes-list, $name))+1;
   }
 
   @else {
-    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes-list}';
+    @warn 'Нет ни одного значения "#{$name}" в этом списке. Выберите один из: #{$z-indexes-list}';
     @return null;
   }
 }

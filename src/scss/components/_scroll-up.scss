@@ -1,4 +1,6 @@
 .scroll-up {
+  $element: &;
+
   position: fixed;
   bottom: rem(-50);
   right: rem(25);
@@ -11,7 +13,10 @@
   font-size: rem(18);
   cursor: pointer;
   overflow: hidden;
-  transition: transform .05s linear, box-shadow $transition, color $transition, bottom .2s linear;
+  transition: transform .05s linear,
+    box-shadow $transition,
+    color $transition,
+    bottom .2s linear;
 
   @include mq('sm') {
     right: rem(10);

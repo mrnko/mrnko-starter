@@ -1,3 +1,15 @@
+// ----------------------------------------------------------------------------------------------
+//
+// Подключение миксинов проекта
+//
+// Для подключения своего миксина, просто создайте его в 
+// директории `scss/mixins` с названием `_миксин.scss` и подключите его в этом файле, 
+// используя следющий код: `@import '../mixins/_миксин.scss`
+//
+// Copyright (c) 2024 Oleksii Myronenko (https://mrnko.com)
+//
+// ----------------------------------------------------------------------------------------------
+
 @import '../mixins/adaptive-font';
 @import '../mixins/adaptive-value';
 @import '../mixins/cursor';
@@ -11,7 +23,7 @@
 @import '../mixins/reset-position';
 @import '../mixins/size';
 @import '../mixins/grid-list';
-
-@import '../mixins/effects/blink-effect';
-@import '../mixins/effects/flow-effect';
-@import '../mixins/effects/stroke-hover-effect';
+@import '../mixins/effect_blink';
+@import '../mixins/effect_flow';
+@import '../mixins/effect_stroke-hover';
+/* добавьте здесь подключение своего миксина... */
