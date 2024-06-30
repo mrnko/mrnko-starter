@@ -5,7 +5,7 @@
 Формат основан на [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 и этот проект придерживается [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.4.0] - 2024-06-29
+## [0.4.0] - 2024-06-30
  
 - Добавлена директория `.core` с системными файлами проекта.
 - Добавлена директория `.vscode` с рекомендуемыми настройками редактора VS Code.
@@ -21,8 +21,10 @@
 - Изменена структура проекта.
 - Изменена структура JS скриптов и улучшен функционал скриптов.
 - Изменены файлы проекта и добавлены комментарии.
+- Изменены изображения favicon проекта в директории `public/images/favicons`.
+- Изменен файл `public/partials/head.html`.
 - Изменены названия пользовательских классов: `.is-mobile` и `.is-desktop` на `.mobile-only` и `.desktop-only`.
-- Удален файл `src/scss/abstracts/placeholders`
+- Удален файл `src/scss/abstracts/placeholders`.
 
 ## [0.3.0] - 2024-03-16
  

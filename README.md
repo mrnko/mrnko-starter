@@ -89,14 +89,24 @@ Lorem ipsum...
 
 Автор: Алексей Мироненко (https://mrnko.com)
 
-## Изменения в версии 0.0.4 (от 29.06.2024)
+## Изменения в версии 0.0.4 (от 30.06.2024)
 
+- Добавлена директория `.core` с системными файлами проекта.
 - Добавлен скрипт сброса демо данных проекта по команде `npm run clear`.
 - Добавлен скрипт создания архива из файлов проекта по команде `npm run zip`.
 - Добавлена документация к проекту.
+- Добавлена страница `404.html` в корневой папке проекта.
+- Добавлен файл `public/partials/page-not-found.html`.
+- Добавлен класс `.fluid` для SASS компонента `container`.
+- Добавлен пользовательский класс `.tablet-only` для опеределния устройства пользователя.
+- Добавлена директория `src/scss/pages` для подключения специфических стилей для страниц.
+- Добавлен файл `src/scss/pages/_page-not-found.scss` для подключения стилей страницы 404.
 - Изменена структура проекта.
 - Изменена структура JS скриптов и улучшен функционал скриптов.
 - Изменены файлы проекта и добавлены комментарии.
+- Изменены названия пользовательских классов: `.is-mobile` и `.is-desktop` на `.mobile-only` и `.desktop-only`.
+- Изменен файл `public/partials/head.html`
+- Удален файл `src/scss/abstracts/placeholders`
 
 [![mrnko - mrnko-starter](https://img.shields.io/static/v1?label=mrnko-starter&message=mrnko-starter&color=blue&logo=github)](https://github.com/mrnko/mrnko-starter "Go to GitHub repo")
 [![stars - mrnko-starter](https://img.shields.io/github/stars/mrnko/mrnko-starter?style=social)](https://github.com/mrnko/mrnko-starter)
