@@ -3,7 +3,6 @@
 
   position: relative;
   z-index: 1000;
-  display: none;
   padding: 0;
   @include size(rem(30), rem(30));
   background: transparent;
@@ -31,9 +30,5 @@
     #{$element}__line {
       stroke: $color-primary;
     }
-  }
-
-  @include mq('md') {
-    display: block;
   }
 }

@@ -1,32 +1,35 @@
 <header class="header">
   <div class="header__container container">
-    <div class="header__logo logo">
-      <a class="logo__link" href="/">
-        <img class="logo__image" src="public/images/logo.svg" alt="Mrnko Starter">
+    <div class="logo">
+      <a class="logo__link" href="index.html">
+        <img class="logo__image" src="public/images/logo.svg" width="200" height="34" title="{{title}}" alt="{{title}}">
       </a>
     </div>
-
-    <div class="header__navigation navigation">
+    
+    <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#buttons">Buttons</a>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#advantages">Преимущества</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#forms">Forms</a>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#buttons">Кнопки</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#table">Table</a>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#forms">Формы</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#slider">Slider</a>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#table">Таблицы</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#modal">Modal</a>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#slider">Слайдер</a>
+        </li>
+        <li class="navigation__item load-hidden">
+          <a class="navigation__link" href="#modal">Модальные окна</a>
         </li>
       </ul>
-    </div>
+    </nav>
 
-    <button class="header__menu-toggle menu-toggle" id="menu-toggle">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
       <svg class="menu-toggle__inner" viewBox="0 0 12 10">
         <path class="menu-toggle__line menu-toggle__line--01" d="M10,2 L2,2"></path>
         <path class="menu-toggle__line menu-toggle__line--02" d="M2,5 L10,5"></path>

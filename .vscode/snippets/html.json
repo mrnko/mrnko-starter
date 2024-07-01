@@ -1,0 +1,266 @@
+{
+	"navigation": {
+		"scope": "html",
+		"prefix": "m-nav",
+		"body": [
+			"<nav class=\"navigation\">",
+			"  <ul class=\"navigation__list\">",
+			"    <li class=\"navigation__item\">",
+			"      <a class=\"navigation__link\">$1</a>",
+			"    </li>",
+			"    <li class=\"navigation__item\">",
+			"      <a class=\"navigation__link\">$2</a>",
+			"    </li>",
+			"    <li class=\"navigation__item\">",
+			"      <a class=\"navigation__link\">$3</a>",
+			"    </li>",
+			"  </ul>",
+			"</nav>"
+		],
+		"description": "Snippet for navigation"
+	},
+	"logo": {
+		"scope": "html",
+		"prefix": "m-logo",
+		"body": [
+			"<div class=\"logo\">",
+			"  <a class=\"logo__link\" href=\"index.html\">",
+			"    <img class=\"logo__image\" src=\"$1\" width=\"$2\" height=\"$3\" title=\"$4\" alt=\"$5\">",
+			"  </a>",
+			"</div>"
+		],
+		"description": "Snippet for logo"
+	},
+	"menu-toggle": {
+		"scope": "html",
+		"prefix": "m-menu-toggle",
+		"body": [
+			"<button class=\"menu-toggle\" id=\"menu-toggle\" aria-label=\"Открыть меню\" aria-expanded=\"false\">",
+			"  <svg class=\"menu-toggle__inner\" viewBox=\"0 0 12 10\">",
+			"    <path class=\"menu-toggle__line menu-toggle__line--01\" d=\"M10,2 L2,2\"></path>",
+			"    <path class=\"menu-toggle__line menu-toggle__line--02\" d=\"M2,5 L10,5\"></path>",
+			"    <path class=\"menu-toggle__line menu-toggle__line--03\" d=\"M10,8 L2,8\"></path>",
+			"  </svg>",
+			"</button>"
+		],
+		"description": "Snippet for Menu toggle (Burger)"
+	},
+	"social": {
+		"scope": "html",
+		"prefix": "m-social",
+		"body": [
+			"<ul class=\"social\">",
+			"  <li class=\"social__item social__item--facebook\">",
+			"    <a class=\"social__link\" href=\"https://facebook.com/$1\" target=\"_blank\" title=\"Наша страница в Facebook\" aria-label=\"Наша страница в Facebook\">",
+			"      <i class=\"social__icon fa-brands fa-facebook\"></i>",
+			"    </a>",
+			"  </li>",
+			"  <li class=\"social__item social__item--twitter\">",
+			"    <a class=\"social__link\" href=\"https://twitter.com/$2\" target=\"_blank\" title=\"Наша страница в Twitter\" aria-label=\"Наша страница в Twitter\">",
+			"      <i class=\"social__icon fa-brands fa-twitter\"></i>",
+			"    </a>",
+			"  </li>",
+			"  <li class=\"social__item social__item--instagram\">",
+			"    <a class=\"social__link\" href=\"https://instagram.com/$3\" target=\"_blank\" title=\"Наша страница в Instagram\" aria-label=\"Наша страница в Instagram\">",
+			"      <i class=\"social__icon fa-brands fa-instagram\"></i>",
+			"    </a>",
+			"  </li>",
+			"  <li class=\"social__item social__item--youtube\">",
+			"    <a class=\"social__link\" href=\"https://youtube.com/$4\" target=\"_blank\" title=\"Наш канал на YouTube\" aria-label=\"Наш канал на YouTube\">",
+			"      <i class=\"social__icon fa-brands fa-youtube\"></i>",
+			"    </a>",
+			"  </li>",
+			"</ul>"
+		],
+		"description": "Snippet for social links"
+	},
+	"form": {
+		"scope": "html",
+		"prefix": "m-form",
+		"body": [
+			"<form class=\"form\" action=\"#$1>\" method=\"post\">",
+			"  <div class=\"form__row\">",
+			"    <div class=\"form__column\">",
+			"      <label class=\"form__label\" for=\"$2\">$3</label>",
+			"      <input class=\"form__input\" id=\"$4\" type=\"text\" name=\"$5\" placeholder=\"$6\" required>",
+			"    </div>",
+			"  </div>",
+			"  <div class=\"form__row\">",
+			"    <div class=\"form__column\">",
+			"      <input class=\"form__button\" type=\"submit\" value=\"Отправить\">",
+			"    </div>",
+			"  </div>",
+			"</form>"
+		],
+		"description": "Snippet for basic form"
+	},
+	"swiper-slider": {
+		"scope": "html",
+		"prefix": "m-swiper-slider",
+		"body": [
+			"<div class=\"swiper $1\">",
+			"  <div class=\"swiper-wrapper\">",
+			"    <div class=\"swiper-slide\">",
+			"      $2",
+			"    </div>",
+			"  </div>",
+			"  <div class=\"swiper-pagination\"></div>",
+			"  <div class=\"swiper-button swiper-button--prev\"></div>",
+			"  <div class=\"swiper-button swiper-button--next\"></div>",
+			"</div>"
+		],
+		"description": "Snippet for basic swiper slider structure"
+	},
+	"micromodal-modal": {
+		"scope": "html",
+		"prefix": "m-micromodal-modal",
+		"body": [
+			"<div class=\"modal modal__slide\" id=\"$1\" aria-hidden=\"true\">",
+			"  <div class=\"modal__overlay\" tabindex=\"-1\">",
+			"    <div class=\"modal__close\">",
+			"      <i class=\"modal__close-icon fa-solid fa-xmark\"></i>",
+			"    </div>",
+			"    <div class=\"modal__container\" role=\"dialog\" aria-modal=\"true\">",
+			"      $2",
+			"    </div>",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Snippet for micromodal basic structure"
+	},
+	"picture": {
+		"scope": "html",
+		"prefix": "m-picture",
+		"body": [
+			"<picture>",
+			"  <source srcset=\"$1.webp\" type=\"image/webp\">",
+			"  <img class=\"image$2\" src=\"$3\" width=\"$4\" height=\"$5\" alt=\"$6\" loading=\"lazy\">",
+			"</picture>"
+		],
+		"description": "Snippet for basic picture structure"
+	},
+	"image": {
+		"scope": "html",
+		"prefix": "m-image",
+		"body": [
+			"<img class=\"image$1\" src=\"$2\" width=\"$3\" height=\"$4\" alt=\"$5\" loading=\"lazy\">"
+		],
+		"description": "Snippet for simple image"
+	},
+	"video": {
+		"prefix": "m-video",
+		"body": [
+			"<video playsinline preload=\"metadata\">",
+			"  <source src=\"/$1\" type=\"video/mp4; codecs=hvc1\">",
+			"  <source src=\"/$2\" type=\"video/webm\">",
+			"</video>"
+		],
+		"description": "Snippet for basic video"
+	},
+	"list": {
+		"prefix": "m-list",
+		"body": [
+			"<ul class=\"list$1\">",
+			"  <li class=\"list__item\">$2</li>",
+			"  <li class=\"list__item\">$3</li>",
+			"  <li class=\"list__item\">$4</li>",
+			"</ul>"
+		],
+		"description": "Snippet for basic list"
+	},
+	"grid": {
+		"prefix": "m-grid",
+		"body": [
+			"<div class=\"grid$1\">",
+			"  <div class=\"grid__item\">",
+			"    $2",
+			"  </div>",
+			"  <div class=\"grid__item\">",
+			"    $3",
+			"  </div>",
+			"  <div class=\"grid__item\">",
+			"    $4",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Snippet for basic grid structure"
+	},
+	"link-blank": {
+		"prefix": "m-link-blank",
+		"body": [
+			"<a class=\"link$1\" href=\"$2\" target=\"_blank\">$3</a>"
+		],
+		"description": "Snippet for basic link blank"
+	},
+	"cookies-notice": {
+		"prefix": "m-cookies-notice",
+		"body": [
+			"<div class=\"cookies-notice\" id=\"cookies-notice\" role=\"dialog\" aria-modal=\"false\" aria-labelledby=\"cookies-notice__title\" aria-describedby=\"cookies-notice__text\">",
+			"  <button class=\"cookies-notice__close\" role=\"button\" aria-label=\"Закрыть предупреждение\" title=\"Закрыть предупреждение\">",
+			"    <i class=\"cookies-notice__close-icon fa-solid fa-xmark\"></i>",
+			"  </button>",
+			"  <h4 class=\"cookies-notice__title\">",
+			"    Мы используем Cookies <i class=\"cookies-notice__title-icon fa-solid fa-cookie-bite\"></i>",
+			"  </h4>",
+			"  <p class=\"cookies-notice__text\">",
+			"    Этот веб-сайт использует файлы cookies, чтобы обеспечить вам более качественный пользовательский опыт. Пожалуйста, разрешите использование этих файлов для дальнейшей работе с веб-сайтом.",
+			"  </p>",
+			"  <div class=\"cookies-notice__buttons\">",
+			"    <button class=\"cookies-notice__button\" id=\"cookies-notice-accept\" role=\"button\">Я согласен (-а)</button>",
+			"    <a class=\"cookies-notice__button cookies-notice__button--link\" href=\"privacy-policy.html#cookies\" target=\"_blank\">Подробнее о файлах Cookies</a>",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Snippet for basic cookies notice"
+	},
+	"scroll-up": {
+		"prefix": "m-scroll-up",
+		"body": [
+			"<div class=\"scroll-up\">",
+			"  <i class=\"scroll-up__icon fa-solid fa-chevron-up\"></i>",
+			"</div>"
+		],
+		"description": "Snippet for basic scroll up button notice"
+	},
+	"table": {
+		"prefix": "m-table",
+		"body": [
+			"<table>",
+			"  <thead>",
+			"    <tr>",
+			"      <td>$1</td>",
+			"      <td>$2</td>",
+			"      <td>$3</td>",
+			"      <td>$4</td>",
+			"    <tr>",
+			"  </thead>",
+			"  <tbody>",
+			"    <tr>",
+			"      <td>$5</td>",
+			"      <td>$6</td>",
+			"      <td>$7</td>",
+			"      <td>$8</td>",
+			"    <tr>",
+			"  </tbody>",
+			"  <tfoot>",
+			"    <tr>",
+			"      <td>$9</td>",
+			"      <td>$10</td>",
+			"      <td>$11</td>",
+			"      <td>$12</td>",
+			"    <tr>",
+			"  </tfoot>",
+			"</table>"
+		],
+		"description": "Snippet for basic table structure"
+	},
+	"container": {
+		"prefix": "m-container",
+		"body": [
+			"<div class=\"container\">",
+			"  $1",
+			"</div>"
+		],
+		"description": "Snippet for basic container structure"
+	}
+}

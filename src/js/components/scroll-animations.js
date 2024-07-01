@@ -4,16 +4,16 @@ import ScrollReveal from 'scrollreveal';
   function makeScrollAnimations() {
     const sr = ScrollReveal({
       reset: false,
-      distance: '70px',
-      duration: 700,
+      distance: '60px',
+      duration: 500,
       easing: 'ease',
       delay: 0,
       mobile: false
     });
 
-    sr.reveal('.hero__title, .hero__subtitle, .hero__info, .hero__social-list-item, .hero__stand-with-ukraine, .navigation__list-item', { origin: 'bottom', interval: 120 });
-    sr.reveal('.demo__title, .demo__list-item', { origin: 'bottom', interval: 120 });
-    sr.reveal('.form__row', { origin: 'bottom', interval: 120 });
+    sr.reveal('.navigation__item, .hero__title, .hero__text, .hero__author-row, .hero .social__item', { origin: 'bottom', interval: 80 });
+    sr.reveal('.demo__title, .demo__list-item', { origin: 'bottom', interval: 80 });
+    sr.reveal('.form__row', { origin: 'bottom', interval: 80 });
     sr.reveal('.table', { origin: 'bottom' });
     sr.reveal('.demo__swiper', { origin: 'bottom' });
     sr.reveal('.footer', { origin: 'top' });

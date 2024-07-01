@@ -1,7 +1,7 @@
 .navigation {
   &__list {
     display: flex;
-    column-gap: 1vw;
+    column-gap: .8vw;
   }
 
   &__link {
@@ -16,10 +16,6 @@
       color: $color-primary;
     }
 
-    @include stroke-hover-effect(rem(2), rem(8) rem(16), $color-primary, .4s);
-  }
-
-  @include mq('md') {
-    display: none;
+    @include stroke-hover-effect(rem(2), rem(10) rem(10), $color-primary, .4s);
   }
 }

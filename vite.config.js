@@ -26,8 +26,8 @@ import { resolve } from 'path';
 // ----------------------------------------------------------------------------------------------
 const pageData = {
   '/index.html': {
-    title: 'MRNKO Starter',
-    description: 'HTML5 Starter — сборка Oleksii Myronenko',
+    title: 'ViteJS ⚡ HTML5 Starter',
+    description: 'ViteJS ⚡ HTML5 Starter — автор Алексей Мироненко',
   },
 };
 

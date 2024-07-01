@@ -2,7 +2,7 @@
   <div class="demo__container container">
     <h3 class="demo__title">Forms</h3>
     <form class="demo__form form" method="post">
-      <div class="form__row form__row--4">
+      <div class="form__row form__row--4 load-hidden">
         <div class="form__column is-desktop">
           <input class="form__input make-cursor-active" id="form-first-name" type="text" required>
           <label class="form__label-above" for="form-first-name">First Name</label>
@@ -20,10 +20,10 @@
           <label class="form__label-above" for="form-email">E-mail</label>
         </div>
       </div>
-      <div class="form__row">
+      <div class="form__row load-hidden">
         <textarea class="form__textarea make-cursor-active" id="form-text" placeholder="Your message"></textarea>
       </div>
-      <div class="form__row form__row--4">
+      <div class="form__row form__row--4 load-hidden">
         <input class="form__button make-cursor-active" type="submit" value="Send message">
       </div>
     </form>

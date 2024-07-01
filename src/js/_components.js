@@ -24,4 +24,6 @@ import { } from './components/slider';
 
 import { } from './components/tooltip';
 
+import { } from './components/particles';
+
 //import { } from './components/custom-cursor';

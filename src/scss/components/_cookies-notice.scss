@@ -3,14 +3,14 @@
   
   display: none;
   position: fixed;
-  bottom: rem(30);
+  bottom: rem(10);
   left: 50%;
   transform: translateX(-50%);
   z-index: z-index('cookies-notice');
-  border-radius: rem(20);
+  border-radius: rem(6);
   min-height: rem(200);
   width: 100%;
-  max-width: rem(600);
+  max-width: rem(500);
   background-color: darken($color-white, 3%);
   padding: rem(30);
   color: $color-text;
